@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>File Ownership</title>
+    <title>File Permissions</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
@@ -29,14 +29,19 @@
 <body>
     <div class="container">
         <div class="row align-items-center">
-            <h2>Change File Ownership in Ubuntu </h2>
-            <p>chown allows us to change the user and/or group ownership of a given file, directory, or symbolic link. 
-                chown takes the following form:
-                chown [OPTIONS] USER[:GROUP] FILE(s)
-                To recursively operate on all files and directories under the given directory, use the -R (--recursive) option.
-                chown -R USER:GROUP DIRECTORY
-                To change the ownership of the symlink itself, use the -h option.
-            <a href="https://linuxize.com/post/linux-chown-command/">Helpful Website</a></p>
+            <h2>Change File Permissions in Ubuntu </h2>
+            <p>chmod modifies Linux file permissions.
+                Three sets of permissions
+                Owner of the file
+                Member's of the file groups
+                Everyone else
+                Permitting or preventing a file from being read, modified, or execution if it is a program or script.
+                For a directory, the permissions govern who can cd into the directory and who can create, or modify files within the directory.
+                2^2 - Read
+                    2^1 - Write
+                    2^0 - Execute permission.
+                    Therefore, for example, 7 is used to allow for reading, writing, and executing together. 
+            <a href=" https://www.howtogeek.com/437958/how-to-use-the-chmod-command-on-linux/">Helpful Website</a></p>
         </div>
     </div>
 </body>
